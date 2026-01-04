@@ -25,9 +25,57 @@ body{
 }
 
 .card{
+    position: relative;
     background-color: #ffffff;
     width: 300px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgb(224, 219, 219);
 }
+.users , .revenue , .growth , .order{
+    display: flex;
+    flex-direction: column;
+}
+ h4{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(48, 46, 46);
+ }
+ h2{
+    margin: 4px;
+    font-size: 20px;
+    color: rgb(48, 46, 46);
+ }
+ .up , .down{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px;
+ }
+ .percentage{
+    background-color: rgb(196, 242, 226);
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+ }
+ .down .percentage{
+    background-color: rgb(244, 158, 158);
+ }
+ .arrow{
+    padding: 5px;
+    color: rgb(241, 129, 129);
+ }
+ .card .icon{
+    position: absolute;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+   background-color: #00c0f0;
+  color: #fff;
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+ }
